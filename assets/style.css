@@ -20,6 +20,8 @@ header {
     font-family:'Anton', sans-serif;
 }
 .carteXmas {
+    -webkit-print-color-adjust:exact !important;
+   
     background-color: rgba(240, 248, 255, 0.639);
     background-image: url();
     background-size: cover;
@@ -79,4 +81,11 @@ header {
     transition: 1s; 
 }
 
-
+@media print {
+    header, .interface {
+        display: none;
+    }
+    .carteXmas {
+        background-url : ()!important
+    }
+}
