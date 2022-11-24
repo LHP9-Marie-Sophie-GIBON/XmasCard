@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&family=Sono:wght@500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fond-hiver-non-localise-flocons-neige_1393-271.webp);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+.carteXmas {
+    background-color: rgba(240, 248, 255, 0.639);
+    background-image: url();
+    background-size: cover;
+    margin: 1rem;
+
+}
+
+.carteXmas img {
+    height: 25rem;
+    width: auto;
+    margin-top: 13rem;
+    filter: drop-shadow(1px 10px 5px black);
+
+}
+
+.choiximage img {
+    height : 6rem; 
+    width: auto;
+    margin: 1rem;
+}
+
+.choiximage img:hover {
+    transform: scale(1.1); 
+    transition: 1s; 
+  }
+
+.choixbackground img {
+    height: 6rem ;
+    width: auto;
+    margin: 1rem;
+}
+
+.choixbackground img:hover {
+    transform: scale(1.1); 
+    transition: 1s; 
+}

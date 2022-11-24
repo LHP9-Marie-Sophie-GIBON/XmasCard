@@ -1,0 +1,117 @@
+<!-- Carte de noel interractive 
+carte en temps reel
+interface : choix font family/message personnalisé (texte haut-bas)/ image / background
+bouton radio ??
+media queries (print): X interface 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header class="h1 text-center">
+    <p>Créer ta carte de Noël</p>
+    </header>
+    <div class="container row">
+        <!-- carte -->
+        <div id="carteXmas" class="carteXmas col-sm text-center rounded border border-light">
+            <span class="fontText" id="textTop"></span>
+            <div id="image" ></div>
+            <span class="fontText" id="textBottom"></span>
+        </div>
+        <!-- interface -->
+        <div class="interface col-sm p-3">
+            <div class="choixfont row border border-light m-3 rounded">
+                <label for="">Choix de la police du texte : </label>
+                <div>
+                    <input type="radio" name="fontfamily" id="choixFont1" value="fontfamily1">
+                    <label for="fontfamily1">Joyeux Noël</label>
+                    <input type="radio" name="fontfamily" id="choixFont2" value="fontfamily2">
+                    <label for="fontfamily2">Joyeux Noël</label>
+                    <input type="radio" name="fontfamily" id="choixFont3" value="fontfamily3">
+                    <label for="fontfamily3">Joyeux Noël</label>
+                </div>
+            </div>
+            <div class="choixcolor row border border-light m-3 rounded">
+                <label for="exampleColorInput" class="form-label ">Choix de la couleur du texte : </label>
+                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                    title="Choose your color">
+            </div>
+            <div class="choixtexttop row border border-light m-3 rounded">
+                <label>Choix du texte du haut : </label>
+                <input class="rounded border-light" type="textaera">
+            </div>
+            <div class="choixtextbottom row border border-light m-3 rounded">
+                <label> Choix du texte du bas : </label>
+                <input class="rounded border-light" type="textaera">
+            </div>
+            <div class="choiximage row border border-light m-3 rounded">
+                <label>Choix de l'image : </label>
+                <div class="text-center">
+                    <img id="choixImg1" src="assets/img/cadoizo.png" alt="">
+                    <img id="choixImg2" src="assets/img/Cerbyllin.png" alt="">
+                    <img id="choixImg3" src="assets/img/Goupix.png" alt="">
+                </div>
+            </div>
+            <div class="choixbackground row border border-light m-3 rounded">
+                <label>Choix du background :</label>
+                <div class="text-center">
+                    <img id="choixBg1" class="rounded-circle" src="assets/img/backgroundxmas_edited.jpg" alt="">
+                    <img id="choixBg2" class="rounded-circle" src="assets/img/backgroundxmas2_edited.jpg" alt="">
+                    <img id="choixBg3" class="rounded-circle" src="assets/img/backgroundxmas3_edited.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // choix textTop
+        // let textTop = document.querySelector()
+        
+        
+        // choix font-family
+        // let fontText = document.querySelector('.fontText')
+        // let choixFont1 = document.querySelector('#choixFont1')
+        // let choixFont2 = document.querySelector('#choixFont2')
+        // let choixFont3 = document.querySelector('#choixFont3')
+
+        // choixFont1.addEventListener('click', () => fontText.style.fontFamily = ''Roboto', sans-serif'); 
+        // choixFont2.addEventListener('click', () => fontText.style.fontFamily = ''Anton', sans-serif'); 
+        // choixFont3.addEventListener('click', () => fontText.style.fontFamily = ''Sono', sans-serif'); 
+
+        
+        // choix de l'image
+        let image = document.querySelector('#image');
+        let choixImg1 = document.querySelector('#choixImg1');
+        let choixImg2 = document.querySelector('#choixImg2');
+        let choixImg3 = document.querySelector('#choixImg3')
+
+        choixImg1.addEventListener('click', () => image.innerHTML = '<img  class="img-fluid" src="assets/img/cadoizo.png" alt="cadoizo">')
+        choixImg2.addEventListener('click', () => image.innerHTML = '<img  class="img-fluid" src="assets/img/Cerbyllin.png" alt="cerbyllin">')
+        choixImg3.addEventListener('click', () => image.innerHTML = '<img  class="img-fluid" src="assets/img/Goupix.png" alt="goupix">')
+
+        // choix du background
+        let carte = document.querySelector('#carteXmas'); 
+        let choixBg1 = document.querySelector('#choixBg1');
+        let choixBg2 = document.querySelector('#choixBg2');
+        let choixBg3 = document.querySelector('#choixBg3');
+
+        choixBg1.addEventListener('click', () => carte.style.backgroundImage = 'url(assets/img/backgroundxmas.jpg)')
+        choixBg2.addEventListener('click', () => carte.style.backgroundImage = 'url(assets/img/backgroundxmas2.jpg)')
+        choixBg3.addEventListener('click', () => carte.style.backgroundImage = 'url(assets/img/backgroundxmas3.jpg)')
+
+
+
+    </script>
+</body>
+
+</html>
