@@ -1,48 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mountains+of+Christmas:wght@700&family=Norican&family=Roboto+Mono&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url(img/fond-hiver-non-localise-flocons-neige_1393-271.webp);
+    font-family: 'Roboto Mono', monospace;
+    
+    background-image: url(img/fond-hiver-non-localise-flocons-neige_1393-271.png);
     background-repeat: no-repeat;
     background-position:center;
     background-attachment:fixed;
     background-size: cover;
+
+    
 }
 
+header {
+    background-color: rgba(240, 248, 255, 0.723);
+    font-family:'Anton', sans-serif;
+}
 .carteXmas {
     background-color: rgba(240, 248, 255, 0.639);
     background-image: url();
     background-size: cover;
-    margin: 1rem;
-
 }
 
+.interface  {
+    background-color: rgba(240, 248, 255, 0.639);
+}
+
+
+.choixFont1 {
+    font-family: 'Anton', sans-serif;
+    margin: 0.5rem;
+}
+
+.choixFont2 {
+    font-family: 'Mountains of Christmas', cursive;
+    margin: 0.5rem;
+}
+
+.choixFont3 {
+    font-family: 'Norican', cursive;
+    margin: 0.5rem;
+}
 .carteXmas img {
     height: 25rem;
     width: auto;
-    margin-top: 13rem;
+    margin-top: 7rem;
     filter: drop-shadow(1px 10px 5px black);
 
 }
+.bouton {
+    width: 10rem;
+}
 
-.choiximage img {
+.choiximage .choixImg {
     height : 6rem; 
     width: auto;
     margin: 1rem;
+    filter: drop-shadow(1px 1px 5px black);
 }
 
-.choiximage img:hover {
+.choiximage .choixImg:hover {
     transform: scale(1.1); 
     transition: 1s; 
   }
 
-.choixbackground img {
+.choixbackground .choixBg{
     height: 6rem ;
     width: auto;
     margin: 1rem;
+    filter: drop-shadow(1px 1px 5px black);
 }
 
-.choixbackground img:hover {
+.choixbackground .choixBg:hover {
     transform: scale(1.1); 
     transition: 1s; 
 }
+
+

@@ -18,78 +18,114 @@ media queries (print): X interface
 </head>
 
 <body>
-    <header class="h1 text-center">
-    <p>Créer ta carte de Noël</p>
+    <header class="h2 text-center sticky-top">
+        <h1><img src="assets/img/pikachu noel.png" alt="" class="img-fluid"> CREER TA CARTE DE NOEL</h1>
     </header>
-    <div class="container row">
-        <!-- carte -->
-        <div id="carteXmas" class="carteXmas col-sm text-center rounded border border-light">
-            <span class="fontText" id="textTop"></span>
-            <div id="image" ></div>
-            <span class="fontText" id="textBottom"></span>
-        </div>
-        <!-- interface -->
-        <div class="interface col-sm p-3">
-            <div class="choixfont row border border-light m-3 rounded">
-                <label for="">Choix de la police du texte : </label>
-                <div>
-                    <input type="radio" name="fontfamily" id="choixFont1" value="fontfamily1">
-                    <label for="fontfamily1">Joyeux Noël</label>
-                    <input type="radio" name="fontfamily" id="choixFont2" value="fontfamily2">
-                    <label for="fontfamily2">Joyeux Noël</label>
-                    <input type="radio" name="fontfamily" id="choixFont3" value="fontfamily3">
-                    <label for="fontfamily3">Joyeux Noël</label>
+    <div class="container ">
+        <div class="row justify-content-center">
+            <!-- carte -->
+            <div id="carteXmas" class="carteXmas col-sm-5 text-center rounded border border-light m-3">
+                <p class="text-center h1 mt-5" id="textTop"></p>
+                <p class="text-center h3 mt-3" id="textBottom"></p>
+                <div id="image"></div>
+            </div>
+            <!-- interface -->
+            <div class="interface col-sm-5 border border-light rounded m-3">
+                <div class="choixtexttop mt-3">
+                    <label for="choixTop" class="h5" alt=""><img src="assets/img/pokeball.png" alt=""> Choix du titre 1
+                        : </label>
+                    <input type="text" id="choixTextTop" class="bouton rounded">
                 </div>
-            </div>
-            <div class="choixcolor row border border-light m-3 rounded">
-                <label for="exampleColorInput" class="form-label ">Choix de la couleur du texte : </label>
-                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
-                    title="Choose your color">
-            </div>
-            <div class="choixtexttop row border border-light m-3 rounded">
-                <label>Choix du texte du haut : </label>
-                <input class="rounded border-light" type="textaera">
-            </div>
-            <div class="choixtextbottom row border border-light m-3 rounded">
-                <label> Choix du texte du bas : </label>
-                <input class="rounded border-light" type="textaera">
-            </div>
-            <div class="choiximage row border border-light m-3 rounded">
-                <label>Choix de l'image : </label>
-                <div class="text-center">
-                    <img id="choixImg1" src="assets/img/cadoizo.png" alt="">
-                    <img id="choixImg2" src="assets/img/Cerbyllin.png" alt="">
-                    <img id="choixImg3" src="assets/img/Goupix.png" alt="">
+                <div class="choixtextbottom mt-3">
+                    <label for="choixTextBottom" class="h5" alt=""><img src="assets/img/pokeball.png" alt=""> Choix du
+                        titre 2 : </label>
+                    <input type="text" id="choixTextBottom" class="bouton rounded">
                 </div>
-            </div>
-            <div class="choixbackground row border border-light m-3 rounded">
-                <label>Choix du background :</label>
-                <div class="text-center">
-                    <img id="choixBg1" class="rounded-circle" src="assets/img/backgroundxmas_edited.jpg" alt="">
-                    <img id="choixBg2" class="rounded-circle" src="assets/img/backgroundxmas2_edited.jpg" alt="">
-                    <img id="choixBg3" class="rounded-circle" src="assets/img/backgroundxmas3_edited.jpg" alt="">
+                <div class="choixfont row mt-3 ">
+                    <label for="" class="h5"><img src="assets/img/pokeball.png" alt=""> Choix de la police du texte
+                        : </label>
+                    <div class="text-center">
+                        <div class="m-1"></div>
+                        <input type="radio" name="fontfamily" id="choixFont1" value="fontfamily1">
+                        <label for="fontfamily1" class="choixFont1">Joyeux Noël</label>
+                        <input type="radio" name="fontfamily" id="choixFont2" value="fontfamily2">
+                        <label for="fontfamily2" class="choixFont2">Joyeux Noël</label>
+                        <input type="radio" name="fontfamily" id="choixFont3" value="fontfamily3">
+                        <label for="fontfamily3" class="choixFont3">Joyeux Noël</label>
+                    </div>
+                </div>
+                <div class="choixcolor mt-3">
+                    <label for="choixcolor" class="h5"><img src="assets/img/pokeball.png
+                        " alt=""> Choix de la couleur :</label>
+                    <input type="color" id="choixColor" name="choixcolor" value="#ff0000">
+                </div>
+                <div class="choiximage row mt-3">
+                    <label class="h5"><img src="assets/img/pokeball.png" alt=""> Choix de l'image : </label>
+                    <div class="text-center">
+                        <img id="choixImg1" class="choixImg" src="assets/img/cadoizo.png" alt="">
+                        <img id="choixImg2" class="choixImg" src="assets/img/Cerbyllin.png" alt="">
+                        <img id="choixImg3" class="choixImg" src="assets/img/Goupix.png" alt="">
+                    </div>
+                </div>
+                <div class="choixbackground row mt-3 mb-3">
+                    <label class="h5"><img src="assets/img/pokeball.png" alt=""> Choix de l'arrière-plan :</label>
+                    <div class="text-center">
+                        <img id="choixBg1" class="choixBg rounded-circle" src="assets/img/backgroundxmas_edited.jpg"
+                            alt="">
+                        <img id="choixBg2" class="choixBg rounded-circle" src="assets/img/backgroundxmas2_edited.jpg"
+                            alt="">
+                        <img id="choixBg3" class="choixBg rounded-circle" src="assets/img/backgroundxmas3_edited.jpg"
+                            alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+   
     <script>
-        // choix textTop
-        // let textTop = document.querySelector()
-        
-        
-        // choix font-family
-        // let fontText = document.querySelector('.fontText')
-        // let choixFont1 = document.querySelector('#choixFont1')
-        // let choixFont2 = document.querySelector('#choixFont2')
-        // let choixFont3 = document.querySelector('#choixFont3')
+        // 1- Choix du titre
+        let textTop = document.querySelector('#textTop');
+        let choixTextTop = document.querySelector('#choixTextTop');
 
-        // choixFont1.addEventListener('click', () => fontText.style.fontFamily = ''Roboto', sans-serif'); 
-        // choixFont2.addEventListener('click', () => fontText.style.fontFamily = ''Anton', sans-serif'); 
-        // choixFont3.addEventListener('click', () => fontText.style.fontFamily = ''Sono', sans-serif'); 
+        choixTextTop.addEventListener('keyup', () => textTop.textContent = choixTextTop.value);
 
-        
-        // choix de l'image
+        // 2- Choix du sous-titre
+        let textBottom = document.querySelector('#textBottom');
+        let choixTextBottom = document.querySelector('#choixTextBottom');
+
+        choixTextBottom.addEventListener('keyup', () => textBottom.textContent = choixTextBottom.value);
+
+        // 3- Choix de la police
+        let choixFont1 = document.querySelector('#choixFont1')
+        let text = document.querySelectorAll('p')
+        text.forEach(element => {
+            choixFont1.addEventListener('click', () => element.style.fontFamily = "'Anton', sans-serif");
+            choixFont2.addEventListener('click', () => element.style.fontFamily = "'Mountains of Christmas', cursive");
+            choixFont3.addEventListener('click', () => element.style.fontFamily = "'Norican', cursive");
+        })
+
+        // 4- Choix de la couleur 
+        let choixColor = document.querySelector('#choixColor');
+        const defaultColor = "#ff0000";
+        window.addEventListener("load", startup, false);
+
+        function startup() {
+            choixColor = document.querySelector("#choixColor");
+            choixColor.value = defaultColor;
+            choixColor.addEventListener("input", updateFirst, false);
+            choixColor.select();
+        }
+
+        function updateFirst(event) {
+            const cardXmas = document.querySelector(".carteXmas");
+            if (cardXmas) {
+                cardXmas.style.color = event.target.value;
+            }
+        }
+
+
+        // 5- choix de l'image
         let image = document.querySelector('#image');
         let choixImg1 = document.querySelector('#choixImg1');
         let choixImg2 = document.querySelector('#choixImg2');
@@ -99,8 +135,8 @@ media queries (print): X interface
         choixImg2.addEventListener('click', () => image.innerHTML = '<img  class="img-fluid" src="assets/img/Cerbyllin.png" alt="cerbyllin">')
         choixImg3.addEventListener('click', () => image.innerHTML = '<img  class="img-fluid" src="assets/img/Goupix.png" alt="goupix">')
 
-        // choix du background
-        let carte = document.querySelector('#carteXmas'); 
+        // 6- choix du background
+        let carte = document.querySelector('#carteXmas');
         let choixBg1 = document.querySelector('#choixBg1');
         let choixBg2 = document.querySelector('#choixBg2');
         let choixBg3 = document.querySelector('#choixBg3');
