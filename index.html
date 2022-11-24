@@ -1,9 +1,3 @@
-<!-- Carte de noel interractive 
-carte en temps reel
-interface : choix font family/message personnalisé (texte haut-bas)/ image / background
-bouton radio ??
-media queries (print): X interface 
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,22 +18,22 @@ media queries (print): X interface
     <div class="container ">
         <div class="row justify-content-center">
             <!-- carte -->
-            <div id="carteXmas" class="carteXmas col-sm-5 text-center rounded border border-light me-2">
+            <div id="carteXmas" class="carteXmas col-sm-5 text-center rounded border border-light m-2">
                 <p class="text-center h1 mt-5 " id="textTop"></p>
                 <p class="text-center h2 mt-3" id="textBottom"></p>
                 <div id="image"></div>
             </div>
             <!-- interface -->
-            <div class="interface col-sm-5 border border-light rounded ms-2">
+            <div class="interface col-sm-5 border border-light rounded m-2">
                 <div class="choixtexttop mt-3">
                     <label for="choixTop" class="h5" alt=""><img src="assets/img/pokeball.png" alt=""> Choix du titre 1
                         : </label>
-                    <input type="text" id="choixTextTop" class="bouton rounded">
+                    <input type="text" id="choixTextTop" class="bouton rounded" maxlength="20">
                 </div>
                 <div class="choixtextbottom mt-3">
                     <label for="choixTextBottom" class="h5" alt=""><img src="assets/img/pokeball.png" alt=""> Choix du
                         titre 2 : </label>
-                    <input type="text" id="choixTextBottom" class="bouton rounded">
+                    <input type="text" id="choixTextBottom" class="bouton rounded" maxlength="20">
                 </div>
                 <div class="choixfont row mt-3 ">
                     <label for="" class="h5"><img src="assets/img/pokeball.png" alt=""> Choix de la police de texte
